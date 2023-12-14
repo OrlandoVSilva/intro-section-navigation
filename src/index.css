@@ -1,0 +1,40 @@
+* {
+  /* Every Element */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+  /*tells the browser to account for any border and padding in the values you specify for an element's width and height.*/
+  transition: all 0.1s ease;
+  font-family: 'Hanken Grotesk', sans-serif;
+  /*CHANGE LATER*/
+  font-size: 16px;
+  font-family: 'Epilogue', sans-serif;
+}
+
+html {
+  min-height: 100%;
+  min-width: 100%;
+  /*border: 5px solid purple;*/
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  /*border: 3px solid red;*/
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*border: 3px solid blue;*/
+  overflow: hidden;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*border: 5px solid blue;*/
+}

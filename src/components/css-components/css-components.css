@@ -1,0 +1,423 @@
+#app-container {
+    position: relative;
+    width: 100%;
+    /*border: 3px solid green*/
+
+    display: grid;
+    grid-template-rows: 60px 560px;
+    /* 2 rows */
+    grid-template-columns: 1fr 1fr;
+    /* 2 columns */
+    padding: 20px;
+}
+
+/* --- Header --- */
+#header {
+    grid-row: 1 / span 1;
+    grid-column: 1/ span 2;
+    /*border: 3px solid purple;*/
+    display: flex;
+}
+
+.header-section {
+    position: relative;
+    width: 50%;
+    /*border: 2px solid orange;*/
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-section:nth-of-type(2) {
+    /*border: 2px solid hotpink;*/
+}
+
+#header-section-logo {
+    position: relative;
+    width: 20%;
+    /*border: 2px solid green;*/
+    background-image: url("../../images/logo.svg");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+#header-section-navigation-bar {
+    position: relative;
+    width: 80%;
+    /*border: 2px solid lawngreen;*/
+}
+
+#header-section-navigation-bar ul {
+    position: relative;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    /*border: 2px solid green;*/
+    align-items: center;
+}
+
+#header-section-navigation-bar li {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-section-navigation-bar li span {
+    margin-left: 10px;
+    font-size: .8em;
+    color: gray;
+}
+
+#header-section-navigation-bar li span:hover {
+    cursor: pointer;
+    color: black;
+    /* do not remove */
+    font-weight: 700;
+}
+
+#header-section-navigation-bar li:hover {
+    .dropdown-options {
+        display: grid;
+    }
+}
+
+#header-section-navigation-bar li:hover>.list-item-dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.list-item-dropdown-arrow {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-image: url("../../images/icon-arrow-down.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    box-shadow: 5px 5px 10px lightgray;
+    border-radius: 10px;
+}
+
+#features-dropdown {
+    width: 120px;
+    height: 130px;
+    padding: 5px;
+    /*border: 2px solid green;*/
+    right: 0%;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 25% 75%;
+    overflow: hidden;
+    display: none;
+}
+
+.features-dropdown-icon:nth-of-type(1) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    background-image: url("../../images/icon-todo.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.features-dropdown-icon:nth-of-type(2) {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    background-image: url("../../images/icon-calendar.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.features-dropdown-icon:nth-of-type(3) {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    background-image: url("../../images/icon-reminders.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.features-dropdown-icon:nth-of-type(4) {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    background-image: url("../../images/icon-planning.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.features-dropdown-label {
+    /*border: 1px solid blue;*/
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.features-dropdown-label span {
+    color: gray;
+    font-size: .8em;
+}
+
+.features-dropdown-label:nth-of-type(1) {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.features-dropdown-label:nth-of-type(2) {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.features-dropdown-label:nth-of-type(3) {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+.features-dropdown-label:nth-of-type(4) {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#company-dropdown {
+    width: 120px;
+    height: 90px;
+    /*border: 2px solid red;*/
+    padding: 10px;
+    left: 10%;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 34% 34% 34%;
+    grid-template-columns: 100%;
+    row-gap: 3px;
+    display: none;
+}
+
+.company-dropdown-label:nth-of-type(1) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.company-dropdown-label:nth-of-type(2) {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.company-dropdown-label:nth-of-type(3) {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+#header-section-desktop-LoginRegister {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid green;*/
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0 5px 0;
+}
+
+.header-section:nth-of-type(2) #header-section-desktop-LoginRegister span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.header-section:nth-of-type(2) #header-section-desktop-LoginRegister span:nth-child(2) {
+    margin-right: 20px;
+    border: 2px solid gray;
+    /* do not remove */
+    border-radius: 15px;
+}
+
+.header-section:nth-of-type(2) #header-section-desktop-LoginRegister span {
+    font-size: .8em;
+    color: gray;
+    height: 100%;
+    padding: 0 15px 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header-section:nth-of-type(2) #header-section-desktop-LoginRegister span:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.header-section:nth-of-type(2) #header-section-desktop-LoginRegister span:nth-child(2):hover {
+    border: 2px solid black;
+    /* do not remove */
+}
+
+#header-section-hamburguer-menu {
+    display: none;
+}
+
+/* --- Header --- */
+
+/* --- Body --- */
+#body-main {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    /*border: 2px solid green;*/
+}
+
+#body-image {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    /*border: 2px solid khaki;*/
+    background-image: url("../../images/image-hero-desktop.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.body-main-section {
+    position: relative;
+    width: 100%;
+    /*border: 2px solid pink;*/
+    padding-left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.body-main-section:nth-of-type(1) {
+    /*border: 2px solid red;*/
+    align-items: flex-end;
+}
+
+.body-main-section:nth-of-type(4) {
+    padding: 0;
+    /*border: 2px solid red;*/
+}
+
+.body-main-header {
+    /* --- Body Header --- */
+    height: 45%;
+}
+
+.body-main-header span {
+    font-size: 4.1em;
+    font-weight: 700;
+}
+
+.body-main-description {
+    /* --- Body Description --- */
+    height: 20%;
+    padding-right: 80px;
+}
+
+.body-main-description span {
+    font-size: .9em;
+    color: gray;
+    line-height: 20px;
+}
+
+.body-main-button {
+    /* --- Body Button --- */
+    height: 15%;
+}
+
+#learn-more-button {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    padding: 15px;
+}
+
+#learn-more-button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    /* do not remove */
+}
+
+#learn-more-button:hover>span {
+    color: black;
+    /* do not remove */
+}
+
+#learn-more-button span {
+    background-color: transparent;
+    font-size: .9em;
+    color: white;
+}
+
+.body-main-footer {
+    /* --- Body Footer --- */
+    height: 20%;
+}
+
+/* --- Body --- */
+
+/* --- Footer --- */
+.footer-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid orange;*/
+}
+
+.footer-section:nth-child(1) {
+    background-image: url("../../images/client-databiz.svg");
+    background-position: 50% 80%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.footer-section:nth-child(2) {
+    background-image: url("../../images/client-audiophile.svg");
+    background-position: 50% 80%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.footer-section:nth-child(3) {
+    background-image: url("../../images/client-meet.svg");
+    background-position: 50% 80%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+.footer-section:nth-child(4) {
+    background-image: url("../../images/client-maker.svg");
+    background-position: 50% 80%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+/* --- Footer --- */
+
+/*--- Modal ---*/
+#modal-background {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    /*border: 2px solid red;*/
+    background-color: black;
+    opacity: .8;
+    z-index: 3;
+}
+
+#mobile-menu-modal {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    /*border: 2px solid green;*/
+    z-index: 4;
+}
+
+/*--- Modal ---*/
