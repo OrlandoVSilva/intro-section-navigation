@@ -157,6 +157,10 @@
     /* --- Body --- */
 
     /*--- Mobile Menu Sections ---*/
+    #mobile-menu-modal {
+        /*border: 2px solid green;*/
+    }
+
     .mobile-menu-modal-section {
         position: relative;
         width: 100%;
@@ -526,6 +530,11 @@
     /* --- Body --- */
 
     /*--- Mobile Menu Sections ---*/
+    #mobile-menu-modal {
+        /*border: 2px solid red;*/
+        width: 50%;
+    }
+
     .mobile-menu-modal-section {
         position: relative;
         width: 100%;
@@ -895,6 +904,11 @@
     /* --- Body --- */
 
     /*--- Mobile Menu Sections ---*/
+    #mobile-menu-modal {
+        /*border: 2px solid red;*/
+        width: 40%;
+    }
+
     .mobile-menu-modal-section {
         position: relative;
         width: 100%;
@@ -948,7 +962,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-todo.svg");
-        background-size: 30%;
+        background-size: 25%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -958,7 +972,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-calendar.svg");
-        background-size: 30%;
+        background-size: 25%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -968,7 +982,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-reminders.svg");
-        background-size: 30%;
+        background-size: 25%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -978,7 +992,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-planning.svg");
-        background-size: 30%;
+        background-size: 25%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1264,6 +1278,11 @@
     /* --- Body --- */
 
     /*--- Mobile Menu Sections ---*/
+    #mobile-menu-modal {
+        /*border: 2px solid green;*/
+        width: 40%;
+    }
+
     .mobile-menu-modal-section {
         position: relative;
         width: 100%;
@@ -1317,7 +1336,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-todo.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1327,7 +1346,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-calendar.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1337,7 +1356,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-reminders.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1347,7 +1366,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-planning.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1633,6 +1652,11 @@
     /* --- Body --- */
 
     /*--- Mobile Menu Sections ---*/
+    #mobile-menu-modal {
+        /*border: 2px solid blue;*/
+        width: 35%;
+    }
+
     .mobile-menu-modal-section {
         position: relative;
         width: 100%;
@@ -1686,7 +1710,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-todo.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1696,7 +1720,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-calendar.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1706,7 +1730,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-reminders.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1716,7 +1740,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-planning.svg");
-        background-size: 30%;
+        background-size: 23%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -1841,7 +1865,7 @@
     /*--- Mobile Menu Sections ---*/
 }
 
-@media screen and (min-width: 651px) and (max-width: 750px) {
+@media screen and (min-width: 651px) and (max-width: 900px) {
     #app-container {
         grid-template-rows: 60px 250px 300px;
         /* 3 rows */
@@ -2002,6 +2026,11 @@
     /* --- Body --- */
 
     /*--- Mobile Menu Sections ---*/
+    #mobile-menu-modal {
+        /*border: 2px solid orange;*/
+        width: 30%;
+    }
+
     .mobile-menu-modal-section {
         position: relative;
         width: 100%;
@@ -2055,7 +2084,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-todo.svg");
-        background-size: 30%;
+        background-size: 20%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -2065,7 +2094,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-calendar.svg");
-        background-size: 30%;
+        background-size: 20%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -2075,7 +2104,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-reminders.svg");
-        background-size: 30%;
+        background-size: 20%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
@@ -2085,7 +2114,7 @@
         grid-column: 1 / span 1;
         /*border: 1px solid green;*/
         background-image: url("../../images/icon-planning.svg");
-        background-size: 30%;
+        background-size: 20%;
         background-position: 80% 50%;
         background-repeat: no-repeat;
     }
